@@ -24,20 +24,24 @@
 
 - (void)dealloc
 {
-    for (void (^ block)() in _objs)
+    while ([_objs count])
     {
+        void (^ block)() = [_objs pop];
         block();
     }
 }
 
 - (void)autoreleaseCF:(CFTypeRef)obj
 {
-    [_objs insertObject:^{ CFRelease(obj); } atIndex:0];
+    [_objs push:^
+    {
+        CFRelease(obj);
+    }];
 }
 
 - (void)autoreleaseBlock: (void (^)(void))block
 {
-    [_objs insertObject:block atIndex:0];
+    [_objs push:block];
 }
 
 @end

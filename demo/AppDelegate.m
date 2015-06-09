@@ -8,9 +8,11 @@
 
 #import "AppDelegate.h"
 #import "../iTunnel/iTunnel.h"
-#import "../iTunnel/SocksV5Proxy/SSHSession/SSHSession.h"
 
 @interface AppDelegate ()
+{
+    iTunnel* _tunnel;
+}
 
 @end
 
@@ -19,10 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // generate rsa key pair
+    _tunnel = [iTunnel new];
+
     /*
-    iTunnel* tunnel = [iTunnel new];
-    
+    // generate rsa key pair
     NSString* tempPath = NSTemporaryDirectory();
     NSString* privateKey = [tempPath stringByAppendingPathComponent:@"private.txt"];
     NSString* publicKey = [tempPath stringByAppendingPathComponent:@"public.txt"];
@@ -30,14 +32,11 @@
     BOOL ret = [tunnel generateNewKeyPair:privateKey :publicKey];
     */
     
-    SSHSession* session = [SSHSession new];
-    
     NSString* keyFolder = [[[NSString stringWithUTF8String:__FILE__] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"KeyPair"];
     NSString* privateKey = [keyFolder stringByAppendingPathComponent:@"private.txt"];
-    NSString* publicKey = [keyFolder stringByAppendingPathComponent:@"public.txt"];
-    
-    int ret = [session connectToHost:@"162.243.131.71" Port:22 Username:@"root" PrivateKey:privateKey];
-    
+
+    [_tunnel startForwarding:7777 :@"162.243.131.71" :22 :@"root" :privateKey :@"google.com" :80];
+        
     return YES;
 }
 

@@ -17,14 +17,29 @@
 
 @interface iTunnel : NSObject
 
-@property(nonatomic, weak) id<ITStatusDelegate> delegate;
+@property (nonatomic, weak) id<ITStatusDelegate>    delegate;
+@property (nonatomic, readonly) uint16_t            listeningPort;
+@property (nonatomic, copy, readonly) NSString*     destHost;
+@property (nonatomic, readonly) uint16_t            destPort;
+@property (nonatomic, readonly) BOOL                connected;
+
+@property (nonatomic, readonly) NSUInteger          connectionCount;
+@property (nonatomic, readonly) NSUInteger          totalBytesWritten;
+@property (nonatomic, readonly) NSUInteger          totalBytesRead;
+
 
 - (BOOL)generateNewKeyPair: (NSString*)privateKeyPath : (NSString*)publicKeyPath;
-- (BOOL)startForwarding: (NSUInteger)localPort
+
+- (void)startForwarding: (NSUInteger)localPort
                        : (NSString*)remoteHost
                        : (NSUInteger)remotePort
+                       : (NSString*)userName
                        : (NSString*)privateKeyPath
-                       : (NSString*)publicKeyPath;
-- (BOOL)stopForwarding;
+                       : (NSString*)destHost
+                       : (NSUInteger)destPort;
+
+- (void)stopForwarding;
+
+- (void)resetNetworkStatistics;
 
 @end

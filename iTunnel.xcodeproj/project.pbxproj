@@ -11,7 +11,6 @@
 		E8392A811AFF712A00742353 /* iTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392A801AFF712A00742353 /* iTunnel.m */; };
 		E8392AAF1AFF763B00742353 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392AAC1AFF763B00742353 /* GCDAsyncSocket.m */; };
 		E8392AB01AFF763B00742353 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392AAE1AFF763B00742353 /* GCDAsyncUdpSocket.m */; };
-		E8392AC01AFF766100742353 /* SOCKSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392AB31AFF766100742353 /* SOCKSProxy.m */; };
 		E8392AC11AFF766100742353 /* SOCKSProxySocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392AB51AFF766100742353 /* SOCKSProxySocket.m */; };
 		E8392AC21AFF766100742353 /* SSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392AB91AFF766100742353 /* SSHChannel.m */; };
 		E8392AC31AFF766100742353 /* SSHGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = E8392ABB1AFF766100742353 /* SSHGlobal.m */; };
@@ -38,6 +37,8 @@
 		E89926C01B25FC88002D3277 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = E89926AE1B25FC88002D3277 /* NSMutableArray+Stack.m */; };
 		E89926C11B25FC88002D3277 /* NSOperationQueue+GlobalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E89926B01B25FC88002D3277 /* NSOperationQueue+GlobalQueue.m */; };
 		E89926C21B25FC88002D3277 /* TTEasyReleasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E89926B21B25FC88002D3277 /* TTEasyReleasePool.m */; };
+		E89926D01B26CBC6002D3277 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E89926CD1B26CBC6002D3277 /* GCDAsyncSocket.m */; };
+		E89926D11B26CBC6002D3277 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E89926CF1B26CBC6002D3277 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,8 +62,6 @@
 		E8392AAC1AFF763B00742353 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		E8392AAD1AFF763B00742353 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		E8392AAE1AFF763B00742353 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		E8392AB21AFF766100742353 /* SOCKSProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCKSProxy.h; sourceTree = "<group>"; };
-		E8392AB31AFF766100742353 /* SOCKSProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKSProxy.m; sourceTree = "<group>"; };
 		E8392AB41AFF766100742353 /* SOCKSProxySocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCKSProxySocket.h; sourceTree = "<group>"; };
 		E8392AB51AFF766100742353 /* SOCKSProxySocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKSProxySocket.m; sourceTree = "<group>"; };
 		E8392AB61AFF766100742353 /* SSHProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHProxyDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +117,10 @@
 		E89926B01B25FC88002D3277 /* NSOperationQueue+GlobalQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+GlobalQueue.m"; sourceTree = "<group>"; };
 		E89926B11B25FC88002D3277 /* TTEasyReleasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEasyReleasePool.h; sourceTree = "<group>"; };
 		E89926B21B25FC88002D3277 /* TTEasyReleasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTEasyReleasePool.m; sourceTree = "<group>"; };
+		E89926CC1B26CBC6002D3277 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E89926CD1B26CBC6002D3277 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		E89926CE1B26CBC6002D3277 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		E89926CF1B26CBC6002D3277 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,7 @@
 		E8392A721AFF712A00742353 = {
 			isa = PBXGroup;
 			children = (
+				E89926CB1B26CBC6002D3277 /* GCDAsyncSocket */,
 				E8392A7D1AFF712A00742353 /* iTunnel */,
 				E878A4521AFF77330041B2E6 /* frameworks */,
 				E8392A7C1AFF712A00742353 /* Products */,
@@ -180,8 +184,6 @@
 		E8392AB11AFF766100742353 /* SocksV5Proxy */ = {
 			isa = PBXGroup;
 			children = (
-				E8392AB21AFF766100742353 /* SOCKSProxy.h */,
-				E8392AB31AFF766100742353 /* SOCKSProxy.m */,
 				E8392AB41AFF766100742353 /* SOCKSProxySocket.h */,
 				E8392AB51AFF766100742353 /* SOCKSProxySocket.m */,
 				E8392AB61AFF766100742353 /* SSHProxyDelegate.h */,
@@ -286,6 +288,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E89926CB1B26CBC6002D3277 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				E89926CC1B26CBC6002D3277 /* GCDAsyncSocket.h */,
+				E89926CD1B26CBC6002D3277 /* GCDAsyncSocket.m */,
+				E89926CE1B26CBC6002D3277 /* GCDAsyncUdpSocket.h */,
+				E89926CF1B26CBC6002D3277 /* GCDAsyncUdpSocket.m */,
+			);
+			name = GCDAsyncSocket;
+			path = iTunnel/GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E89926B71B25FC88002D3277 /* DDLog.m in Sources */,
+				E89926D11B26CBC6002D3277 /* GCDAsyncUdpSocket.m in Sources */,
 				E89926BF1B25FC88002D3277 /* NSMutableArray+Queue.m in Sources */,
 				E89926B91B25FC88002D3277 /* DDContextFilterLogFormatter.m in Sources */,
 				E89926B41B25FC88002D3277 /* DDASLLogCapture.m in Sources */,
@@ -356,9 +371,9 @@
 				E89926BC1B25FC88002D3277 /* NSThread+SequenceNumber.m in Sources */,
 				E89926BE1B25FC88002D3277 /* KPLogFormatter.m in Sources */,
 				E8392AC51AFF766100742353 /* SSHTCPDirectTunnel.m in Sources */,
+				E89926D01B26CBC6002D3277 /* GCDAsyncSocket.m in Sources */,
 				E8392AC41AFF766100742353 /* SSHSession.m in Sources */,
 				E89926B81B25FC88002D3277 /* DDTTYLogger.m in Sources */,
-				E8392AC01AFF766100742353 /* SOCKSProxy.m in Sources */,
 				E89926B31B25FC88002D3277 /* DDAbstractDatabaseLogger.m in Sources */,
 				E8392AC31AFF766100742353 /* SSHGlobal.m in Sources */,
 				E8392AC11AFF766100742353 /* SOCKSProxySocket.m in Sources */,

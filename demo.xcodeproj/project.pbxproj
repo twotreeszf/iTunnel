@@ -331,6 +331,7 @@
 					"$(inherited)",
 					"/Users/twotrees/Documents/src/iTunnel/iTunnel/build/Debug-iphoneos",
 				);
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -345,6 +346,7 @@
 					"$(inherited)",
 					"/Users/twotrees/Documents/src/iTunnel/iTunnel/build/Debug-iphoneos",
 				);
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

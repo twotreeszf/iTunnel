@@ -52,6 +52,15 @@
 	return ret;
 }
 
+- (int)connectToHost:(NSString*)host Port:(UInt16)port Username:(NSString*)username PrivateKey:(NSString *)privateKey
+{
+    int ret = [_ssh connectToHost:host Port:port Username:username PrivateKey:privateKey];
+    if (LIBSSH2_ERROR_NONE == ret)
+        [self _startProxyOperation];
+    
+    return ret;
+}
+
 - (int)reconnect
 {
 	int ret = [_ssh reconnect];

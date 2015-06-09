@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (Stack)
 
-- (id)popStack
+- (id)pop
 {
 	if (![self count])
 		return nil;
@@ -21,7 +21,7 @@
     return lastObject;
 }
 
-- (void)pushStack:(id)obj
+- (void)push:(id)obj
 {
 	[self addObject: obj];
 }
