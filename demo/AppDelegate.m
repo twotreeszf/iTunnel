@@ -35,7 +35,7 @@
     NSString* keyFolder = [[[NSString stringWithUTF8String:__FILE__] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"KeyPair"];
     NSString* privateKey = [keyFolder stringByAppendingPathComponent:@"private.txt"];
 
-    [_tunnel startForwarding:7777 :@"kikjoy.com" :22 :@"fasttunnel" :privateKey :@"google.com" :80];
+    [_tunnel startForwarding:7777 :@"do.kikjoy.com" :22 :@"fasttunnel" :privateKey :@"google.com" :80];
         
     return YES;
 }
